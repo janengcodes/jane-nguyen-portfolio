@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Source+Serif+Pro:wght@300;400&display=swap');
+
+body {
+    font-family: 'Cabin', sans-serif;
+    font-family: 'Source Serif Pro', serif;
+}
+div.skip a {
+    position: absolute;
+    top: -40px; 
+}
+
+div.skip a:focus {
+    top: 20px;
+}
+
+*:focus {
+    border: solid 2px #000000;
+    border-radius: 10px;
+}
+
+.navBar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.design-gallery img {
+    background-color: aliceblue;
+    max-width: 90%;
+}
+
+.project-gallery img {
+    background-color: aliceblue;
+    max-width: 70%;
+}
