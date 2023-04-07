@@ -23,13 +23,33 @@ div.skip a:focus {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
+    background-color: #F7D488;
 }
 
-.design-gallery img {
-    background-color: aliceblue;
-    max-width: 90%;
+@media only screen and (min-width: 600px) {
+    .design-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
+    .project-gallery {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    } 
 }
-
+@media only screen and (min-width: 800px) {
+    .design-gallery {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .design-gallery img {
+        background-color: aliceblue;
+        max-width: 70%;
+    }
+}
+.project-gallery {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
 .project-gallery img {
     background-color: aliceblue;
     max-width: 70%;
