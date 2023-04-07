@@ -41,14 +41,14 @@ div.skip a:focus {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .design-gallery img {
-        background-color: aliceblue;
-        max-width: 70%;
+    .project-gallery {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
     }
 }
-.project-gallery {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+.design-gallery img {
+    background-color: aliceblue;
+    max-width: 70%;
 }
 .project-gallery img {
     background-color: aliceblue;
