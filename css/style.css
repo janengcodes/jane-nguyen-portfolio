@@ -178,7 +178,6 @@ nav ul a:nth-child(3n).active {
         max-height: 50px;
     }
     .project-gallery, .project-gallery2  {
-        display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
 }
@@ -204,11 +203,9 @@ nav ul a:nth-child(3n).active {
         max-height: 300px;
     }
     .project-gallery, .project-gallery2 {
-        display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
     .project-gallery2 {
-        display: grid;
         grid-template-columns: repeat(5, 1fr);
     }
 }
