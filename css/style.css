@@ -1,7 +1,55 @@
-@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@400;600&family=Source+Serif+Pro:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono:wght@300&display=swap');
 
+* {
+    color: white;
+    background-color: black;
+    font-family: 'Chivo Mono', monospace;
+}
+
+.contact {
+    background-color: #42CAFD;
+    color: black;
+}
+
+.about {
+    background-color: #E4C1F9;
+    color:black;
+}
+
+.jane-nguyen {
+    max-height: 90px;
+    margin-right: 10px;
+}
+
+.meDiv {
+    display: grid;
+    justify-content: center;
+}
+
+.me {
+    max-width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+}
+h1, h2, p {
+    text-align: center;
+    padding: 40px;
+}
+
+footer {
+    margin: 10px;
+    margin-top: 10px;
+}
+
+.welcome {
+    background-color: lightpink;
+    color: black;
+}
+.my-projects{
+    background-color: #9CE37D;
+    color: black;
+}
 body {
-    font-family: 'Cabin', sans-serif;
     font-family: 'Source Serif Pro', serif;
 }
 div.skip a {
@@ -14,7 +62,7 @@ div.skip a:focus {
 }
 
 *:focus {
-    border: solid 2px #000000;
+    border: solid 2px lightcoral;
     border-radius: 10px;
 }
 
@@ -23,34 +71,144 @@ div.skip a:focus {
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
-    background-color: #F7D488;
+    background-color: black;
+}
+
+nav ul {
+    padding-inline-start: 0%;
+}
+
+nav ul a {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+nav ul a:hover,
+nav ul a.active {
+    padding: 15px;
+    background-color: #FDFCDC;
+    border: solid gray 3px;
+}
+
+nav ul a.active {
+    padding: 15px;
+    background-color: #FDFCDC;
+}
+
+nav ul a:nth-child(3n) {
+    background-color: black;
+}
+
+nav ul a:nth-child(3n):hover,
+nav ul a:nth-child(3n).active {
+    background-color: none;
+}
+
+.active-page {
+    background-color: #FDFCDC;
+    border: solid gray 3px;
+}
+
+.design-gallery, .design-gallery2 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: space-around;
+    margin-left: auto;
+    justify-content: center;
+}
+
+.design, .design2 {
+    padding: 10px;
+    margin: 1%;
+}
+.design-gallery img {
+    border: solid white 4px;
+}
+.design-gallery2 img {
+    border: solid white 4px;
+}
+
+.project-gallery, .project-gallery2 {
+    display: grid;
+}
+
+.design-text {
+    background-color: #F9B5AC;
+    color: black;
+}
+
+.project-gallery, .project-gallery2 {
+    grid-gap: 5%;
+}
+
+.project-gallery img, .project-gallery2 img  {
+    max-width: 70%;
+    background-color: white;
+    padding: 10px;
+}
+
+.form-block{
+    display: block;
+    margin-top: 2%;
 }
 
 @media only screen and (min-width: 100px) {
-    .design-gallery {
+    .design-gallery img {
+        max-height: 100px;
+    }
+    .design-gallery2 img {
+        max-height: 100px;
+    } 
+    .project-gallery, .project-gallery2 {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
     } 
-    .project-gallery {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-    } 
+    footer {
+        margin-top: 70px;
+    }
 }
-@media only screen and (min-width: 800px) {
-    .design-gallery {
+@media only screen and (min-width: 510px) {
+    .design-gallery img {
+        max-height: 100px;
+    }
+    .design-gallery2 img {
+        max-height: 50px;
+    }
+    .project-gallery, .project-gallery2  {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
     }
-    .project-gallery {
+}
+@media only screen and (max-width: 874px) {
+    .jane-nguyen {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 591px) {
+    .aboutBtn {
+        display: none;
+    }
+    .contactBtn {
+        display: none;
+    }
+}
+@media only screen and (min-width: 750px) {
+    .design-gallery img {
+        max-height: 400px;
+    }
+    .design-gallery2 img {
+        max-height: 300px;
+    }
+    .project-gallery, .project-gallery2 {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
     }
-}
-.design-gallery img {
-    background-color: aliceblue;
-    max-width: 70%;
-}
-.project-gallery img {
-    background-color: aliceblue;
-    max-width: 70%;
+    .project-gallery2 {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+    }
 }

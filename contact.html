@@ -16,15 +16,43 @@
             <div class="navBar">
             <a href="my-projects.html">Projects</a>
             <a href="digitaldesign.html">Digital Design</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a href="index.html" class="jane-nguyen-link"><img class="jane-nguyen" src="images/jane-nguyen.png" alt="jane nguyen"></a>
+            <a href="about.html" class="active-page" class="aboutBtn">About</a>
+            <a href="contact.html" class="contactBtn">Contact</a>
             </div>
           </ul>
         </nav>
     </header>
     <main id="main">
-      <h1>Contact Me</h1>
+      <h1 class="contact">Contact Me!</h1>
 
+      <form action="https://formspree.io/f/mzbqyzyd" method="POST">
+        <fieldset>
+          <legend>Contact Form</legend>
+          <div class="form-block">
+          <label for="name">Name</label>
+          <input id="name" type="text" placeholder="enter your name"> 
+          </div>
+          <div class="form-block">
+          <label for="email">Email</label>
+          <input id="email" type="email" placeholder="email please!">
+          </div>
+          <div class="form-block">
+          <label for="phone">Phone</label>
+          <input id="phone" type="tel" label="email" placeholder="phone number here">
+          </div>
+          <div class="form-block">
+          <label for="formtext">Your Message</label>
+          <textarea id="formtext"  placeholder="message :0"></textarea>
+          </div>
+          <div class="form-block">
+          <input type="submit" value="submit"> 
+          </div>
+        </fieldset>
+       </form>
     </main>
 </body>
+<footer>
+  <p1>Created by Jane Nguyen 2023</p1>
+</footer>
 </html>
